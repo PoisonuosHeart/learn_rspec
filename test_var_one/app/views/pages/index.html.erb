@@ -1,0 +1,9 @@
+<h1>Pages#index</h1>
+<%=form_for :pages, url: home_path  do |f|%>
+<%= f.text_field :field1%>
+<%= f.text_field :field2%>
+<%= f.submit('Отправить')%>
+<%end%>
+<%if @res%>
+<p>max: <%=@res%></p>
+<%end%>
